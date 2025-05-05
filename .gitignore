@@ -1,0 +1,165 @@
+# === Python ===
+# Виртуальные окружения
+venv/
+env/
+.venv/
+.env/
+*/venv/
+*/env/
+*/.venv/
+*/.env/
+
+# Python кэш и скомпилированные файлы
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Файлы дистрибутивов / установки
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Логи установки Pip
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Артефакты IPython Notebook
+.ipynb_checkpoints
+
+# Артефакты PyInstaller (если используется для сборки)
+*.manifest
+*.spec
+
+
+# === Конфигурация и Секреты (ОЧЕНЬ ВАЖНО!) ===
+# Никогда не добавляйте файлы с секретами (API ключи, пароли от БД, токены) в Git!
+# Используйте переменные окружения или отдельные, игнорируемые файлы конфигурации.
+.env
+.env.*
+*.env
+secrets.py
+config.ini
+config.json
+config.yaml
+settings.local.py # Распространенное имя для локальных настроек Django/Flask
+
+# Добавьте сюда другие ваши файлы с секретами, если они называются иначе
+
+# Пример файла конфигурации (можно добавить в репозиторий, но без секретов)
+# .env.example
+# config.example.ini
+
+
+# === Базы данных ===
+# Локальные файлы баз данных (например, SQLite для разработки)
+*.sqlite3
+*.db
+*.db-journal*
+# Локальные дампы баз данных (если делаете)
+# *.sql
+# *.dump
+
+
+# === Логи и Временные файлы ===
+# Лог-файлы
+*.log
+logs/
+log/
+
+# Временные файлы или папки для загрузок/обработки
+tmp/
+temp/
+*.tmp
+*.temp
+cache/
+.cache/
+
+
+# === Файлы сессий / Загрузки ===
+# Файлы сессий веб-фреймворков
+instance/ # Часто используется Flask для локальных данных/конфигов
+sessions/
+# Папки для медиа файлов, загружаемых пользователями (если хранятся локально при разработке)
+media/
+uploads/
+
+
+# === Артефакты тестирования ===
+.tox/
+.nox/
+.coverage
+.coverage.*
+htmlcov/
+pytest_cache/
+.pytest_cache/
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+
+
+# === Файлы IDE / Редакторов ===
+# PyCharm
+.idea/
+*.iml
+
+# VS Code
+.vscode/
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+#*#
+.*.swp
+
+# Netbeans
+nbproject/
+
+# Spyder
+.spyderproject
+.spyproject
+
+
+# === Файлы операционной системы ===
+# macOS
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+__MACOSX
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+
+# === Прочее ===
+# Зависимости Node (если используется JS-сборка для фронтенда в том же проекте)
+# node_modules/
+# npm-debug.log*
+# yarn-debug.log*
+# yarn-error.log*
