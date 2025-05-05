@@ -7,7 +7,8 @@ app = Flask(__name__)
 
 # --- НАСТРОЙКА CORS ---
 # Разрешаем запросы только с вашего фронтенда
-CORS(app, resources={r"/*": {"origins": ["https://www.bestballerinavote.com"]}}) # <-- ИЗМЕНЕНИЕ ЗДЕСЬ
+# В server.py
+CORS(app) # Разрешить запросы со всех источников
 
 @app.route("/check-response", methods=["GET"])
 def check_response():
